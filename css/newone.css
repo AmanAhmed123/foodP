@@ -1,0 +1,125 @@
+h1 {
+    padding-top: 20px;
+    padding-bottom: 25px;
+    margin: 0 !important;
+    font-family: 'Pangolin', cursive;
+    color: var(--main-color);
+    background-color: white;
+    padding-left: 10px;
+    text-align: start;
+    font-size: 35px;
+}
+.addToCard {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    height: 100vh;
+    background-color: #eee;
+}
+.things {
+    display: grid;
+    grid-template-columns: 70% 30% !important;
+    text-align: center;
+    background-color: white;
+    margin-top: 53px;
+    margin-left: 30px;
+}
+.things .right .content-Right{
+    display: grid;
+    grid-template-columns: 30% 30% 20% 20%;
+    font-size: 20px;
+    grid-row-gap: 20px;
+    padding-bottom: 15px;
+}
+.things .right .content-Right .ChanksBox .EN,
+.things .right .content-Right .ChanksBox .EA
+{
+        background-color: var(--main-color);
+        width: 17px;
+        display: inline-block;
+        text-align: center;
+        margin-right: 5px;
+        font-size: 20px;
+        color: white;
+}
+.things .right .content-Right .ChanksBox .EA {
+    margin-left: 5px;
+}
+.things .right .content-Right .itemPlace,
+.NamePlace,
+.QuantityPlace,
+.PricePlace {
+    margin-bottom: 20px;
+}
+.timeCange .item {
+    display: grid;
+    grid-template-columns: 30% 30% 20% 20%;
+    margin-bottom: 30px;
+}
+.img-div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-div .img-Card {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+}
+.img-div .img-Card img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.text,
+.ChanksBox,
+.price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.things .left {
+    display: flex;
+    justify-content: center;
+    background-color: #eee;
+}
+.things .left .content {
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+    align-items: start;
+    flex-direction: column;
+    gap: 30px;
+    background-color: white;
+    padding: 30px;
+    margin-top: 50px;
+}
+.things .left .content p {
+    font-size: 18px;
+}
+.things .left .content .button {
+    text-align: center;
+    width: 100%;
+}
+.things .left .content .button button {    
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: var(--main-color);
+    color: white;
+}
+.change {
+     opacity: 0;
+     z-index: -1;
+}
+@media (max-width:734px)  {
+    .things  {
+        display: grid;
+      grid-template-columns: 100% !important;
+    }
+}

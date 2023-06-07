@@ -1,0 +1,305 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body {
+    background-color: #eee;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+  ::-webkit-scrollbar-thumb {
+
+    background-color: #eee;
+    
+    }
+    ::-webkit-scrollbar-track {
+        background: #eee;
+      }
+:root {
+    --main-color: #c85858;
+    --secont-color :#ffb7b7;
+    --third-color:#a4dbab;
+    --fore-color:#8da8e1;
+}
+h1 {
+    padding-top: 50px;
+    padding-bottom: 10px;
+    margin: 0 !important;
+    font-family: 'Pangolin', cursive;
+    color: var(--main-color);
+    background-color: #eee;
+}
+h1:first-child {
+    padding: 0;
+    padding-bottom: 10px;
+
+}
+.biryani,
+.chaicken-delicious,
+.paneer-mania,
+.Chinese-Corner
+ {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 15px;
+}
+@media (max-width:1147px) {
+    section {  
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr !important;
+        }
+}
+@media (max-width:907px) {
+    section {  
+        display: grid;
+        grid-template-columns: 1fr 1fr !important;
+        text-align: center;
+        }
+}
+@media (max-width:616px) {
+    section {  
+        display: grid;
+        grid-template-columns: 1fr !important;
+        text-align: center;
+        }
+}
+.card {
+    background-color: var(--secont-color);
+    width: 100%;
+    height: 100%;
+}
+.card .icons {
+    display: flex;
+    justify-content: space-between;
+    padding: 7px 12px;
+}
+.card .text {
+    margin-top: 20px;
+    padding: 10px;
+}
+.card .icons .ty {
+    background-color: black;
+    color: gold;
+    padding: 4px 7px;
+    border-radius: 14px;
+}
+.card .icons .ty svg {
+    font-size: 11px;
+}
+.card .icons span {
+   cursor: pointer;
+}
+.card .img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+.card .img .img-div{
+    width: 105px;
+    height: 105px;
+    border-radius: 50%;
+    background-size: cover;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.card .img .img-div:hover {
+    transform: scale(1.1,1.1);
+}
+.card .img .img-div img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.thied-color {
+    background-color: var(--third-color) !important;
+}
+.fore-color {
+    background-color: var(--fore-color);
+}
+.AddLoveEle {
+    background-color: var(--main-color) !important;
+    color: white !important;
+    padding: 4px;
+    border-radius: 10px;
+}
+
+h1 {
+    padding-top: 20px;
+    padding-bottom: 25px;
+    margin: 0 !important;
+    font-family: 'Pangolin', cursive;
+    color: var(--main-color);
+    background-color: white;
+    padding-left: 10px;
+    text-align: start;
+    font-size: 35px;
+}
+.addToCard {
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    opacity: 0;
+    height: 100vh;
+    z-index: -1;
+    position: fixed; 
+    overflow: auto;
+    background-color: #eee;
+}
+.things {
+    display: grid;
+    grid-template-columns: 70% 30% !important;
+    text-align: center;
+    background-color: white;
+    margin-top: 53px;
+    margin-left: 30px;
+}
+.things .right::-webkit-scrollbar {
+    display: block !important;
+    width: 10px;
+}
+.things .right::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+.things .right::-webkit-scrollbar-thumb {
+    background: var(--main-color);
+    border-radius: 5px;
+  }
+    
+.things .right {
+    padding: 18px;
+    display: grid;
+    grid-template-columns: 1fr !important;
+    max-height: 538px;
+    overflow: auto;
+}
+.things .right .content-Right{
+    display: grid;
+    grid-template-columns: 30% 30% 20% 20%;
+    font-size: 20px;
+}
+.addToCard .things .right .item .ChanksBox .EN,
+.addToCard .things .right .item .ChanksBox .EA
+{
+        background-color: var(--main-color);
+        width: 17px;
+        display: inline-block;
+        text-align: center;
+        margin-right: 5px;
+        font-size: 20px;
+        color: white;
+        cursor: pointer;
+}
+.addToCard .things .right .item .ChanksBox .EA {
+    margin-left: 5px;
+}
+.things .right .content-Right .itemPlace,
+.NamePlace,
+.QuantityPlace,
+.PricePlace {
+    margin-bottom: 20px;
+}
+.timeCange .item {
+    display: grid;
+    grid-template-columns: 30% 30% 20% 20%;
+    margin-bottom: 30px;
+    grid-row-gap: 20px;
+}
+.img-div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-div .img-Card {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+}
+.img-div .img-Card img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.textA,
+.ChanksBox,
+.priceA {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.things .left {
+    display: flex;
+    justify-content: center;
+    background-color: #eee;
+}
+.things .left .content {
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+    align-items: start;
+    flex-direction: column;
+    gap: 30px;
+    background-color: white;
+    padding: 30px;
+    margin-top: 50px;
+}
+.things .left .content p {
+    font-size: 18px;
+}
+.things .left .content .button {
+    text-align: center;
+    width: 100%;
+}
+.things .left .content .button button {    
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: var(--main-color);
+    color: white;
+}
+ 
+@media (max-width:734px)  {
+    .things  {
+        display: grid;
+      grid-template-columns: 100% !important;
+    }
+}
+@media (max-width:1230px) {
+    .things .right {
+        display: grid;
+        grid-template-columns: 1fr !important;
+    }
+}
+.change {
+    opacity: 1;
+    z-index: 1;
+}
+.items-card {
+    background-color: #eee;
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+    position: fixed;
+    width: fit-content;
+    border-radius: 9px;
+    padding: 10px;
+    right: 20px;
+    top: 0;
+    z-index: 2;
+    cursor: pointer;
+}
+.Acrd {
+    background-color: #eee !important;
+}
+.finalPrice2 {
+    color: red;
+}
+.FreeDlevery {
+    color: green;
+}
